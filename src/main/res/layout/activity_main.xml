@@ -22,7 +22,7 @@
            android:id="@+id/imageView"
            android:layout_width="match_parent"
            android:layout_height="350dp"
-           android:layout_margin="24dp"
+           android:layout_margin="0dp"
            app:srcCompat="@android:drawable/ic_menu_camera"
            tools:srcCompat="@android:drawable/ic_menu_camera"></ImageView>
        <TextView
@@ -40,18 +40,178 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:max="100"
+           android:visibility="gone"
            tools:progress="40">
        </ProgressBar>
    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/palette_img"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/button_upload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload Image"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
     </Button>
+
+    <Button
+        android:id="@+id/button_outline_bw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="76dp"
+        android:text="Outlines(BW)"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/button_outline_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="30dp"
+        android:text="Outline(Color)"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <Button
+        android:id="@+id/button_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Color"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/button_outline_color"
+        app:layout_constraintStart_toEndOf="@+id/button_outline_bw"
+        app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <ScrollView
+        android:id="@+id/paletteView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <Button
+                    android:id="@+id/p1"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:text="1"></Button>
+                <Button
+                    android:id="@+id/p2"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="2"></Button>
+                <Button
+                    android:id="@+id/p3"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="3"></Button>
+                <Button
+                    android:id="@+id/p4"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="4"></Button>
+                <Button
+                    android:id="@+id/p5"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="5"></Button>
+                <Button
+                    android:id="@+id/p6"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="6"></Button>
+                <Button
+                    android:id="@+id/p7"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="7"></Button>
+
+                <Button
+                    android:id="@+id/p8"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:text="8"></Button>
+                <Button
+                    android:id="@+id/p9"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="9"></Button>
+                <Button
+                    android:id="@+id/p10"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="10"></Button>
+                <Button
+                android:id="@+id/p11"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:visibility="gone"
+                android:text="11"></Button>
+                <Button
+                    android:id="@+id/p12"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="12"></Button>
+                <Button
+                    android:id="@+id/p13"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="13"></Button>
+                <Button
+                    android:id="@+id/p14"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="14"></Button>
+                <Button
+                    android:id="@+id/p15"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="15"></Button>
+                <Button
+                    android:id="@+id/p16"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:visibility="gone"
+                    android:text="16"></Button>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

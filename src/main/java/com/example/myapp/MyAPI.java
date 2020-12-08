@@ -12,7 +12,9 @@ public interface MyAPI {
     //@POST("Api.php?apicall=upload")
     @POST("api/upload")
         //Call<imageClass> uploadImage(@Field("title") String title,@Field("image") String image);
-        Call<RequestBody> uploadImage(@Part MultipartBody.Part image, @Part("desc") RequestBody requestBody);
-    //Call<RequestBody> uploadImage(@Part MultipartBody.Part part);
+        //Call<RequestBody> uploadImage(@Part MultipartBody.Part part, @Part("desc") RequestBody requestBody);
+        Call<UploadResponse> uploadImage(@Part MultipartBody.Part image, @Part("desc") RequestBody requestBody);
+        //Call<RequestBody> uploadImage(@Part MultipartBody.Part body);
+        //Call<String> uploadImage(@Part MultipartBody.Part body);
 }
 

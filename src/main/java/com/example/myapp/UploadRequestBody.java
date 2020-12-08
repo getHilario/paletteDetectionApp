@@ -12,14 +12,14 @@ import okhttp3.RequestBody;
 import okio.BufferedSink;
 
 public class UploadRequestBody extends RequestBody {
-    private static final int DEFAULT_BUFFER_SIZE = 1048;
+    private static final int DEFAULT_BUFFER_SIZE = 1024;
     private File file;
     private String contentType;
     private UploadCallback callback;
 
     public UploadRequestBody(File file, String contentType, UploadCallback callback) {
         this.file = file;
-        this.contentType = contentType;
+        //this.contentType = contentType;
         this.callback = callback;
     }
 

@@ -1,5 +1,12 @@
 # paletteDetectionApp
-Android application for detecting palette within an image and drawing out contours based on the selected colors
+Android application for detecting palette within an image and drawing out contours based on the selected colors. The goal is to create a simplified image for art purposes, similar to an image found in a coloring book. The app reduces the image to a range of 8 colors through a Python backend using a KMeans approach. 
+The application then gives the user view three possible options:
+
+-The reduced image
+-The reduced image with contours
+-A black and white image with contours (with numbers representing matching color)
+
+
 Android Interface:
 ![Screenshot_1606721640](https://user-images.githubusercontent.com/54413952/110193715-34bd0c00-7dfb-11eb-91fc-c791a13f5af0.png)
 

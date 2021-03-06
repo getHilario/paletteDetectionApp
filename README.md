@@ -3,7 +3,9 @@ Android application for detecting palette within an image and drawing out contou
 The application then gives the user view three possible options:
 
 -The reduced image
+
 -The reduced image with contours
+
 -A black and white image with contours (with numbers representing matching color)
 
 
